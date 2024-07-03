@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="grooviral.css" />
+    <link rel="stylesheet" href="instagram-facebook.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Ogundipe Adeyemi</div>
+      <nav class="nav-links">
+        <a href="about">About</a>
+        <a href="experience">Experience</a>
+        <a href="projects">Projects</a>
+        <a href="contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <img
+            src="profile.jpeg"
+            alt="Slack Profile Picture"
+            data-testid="slackProfilePicture"
+            width="150"
+            height="150"
+          />
+          <p data-testid="slackDisplayName">Ogundipe Adeyemi</p>
+          <p data-testid="slackEmail">Ogundipedeyemi@gmail.com</p>
+        </div>
+
+        <div class="time-info">
+          <p>
+            Current Time in UTC:
+            <span data-testid="currentTimeUTC">--:--:--</span>
+          </p>
+          <p>Current Day: <span data-testid="currentDay">----</span></p>
+        </div>
+      </aside>
+
+      <main>
+        <h1>My Tech Goals for the Next 2 Years</h1>
+
+        <div class="goals">
+          <h2>Goals</h2>
+          <ul>
+            <li>Master JavaScript and frameworks like React and Node.js</li>
+            <li>Create a product and solve problems</li>
+            <li>Build a portfolio of projects</li>
+            <li>Gain proficiency in frontend development and backend</li>
+            <li>Learn data structures and algorithms</li>
+            <li>Obtain relevant certifications</li>
+          </ul>
+        </div>
+      </main>
+
+      <aside class="links">
+        <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
+        <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+        <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+          >Scrape Any Web</a
+        >
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

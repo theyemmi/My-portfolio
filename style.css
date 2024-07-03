@@ -1,0 +1,142 @@
+/* instagram-facebook.css */
+
+body {
+    font-family: 'poppin', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e0e0e;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #777575;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #cccccc;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 1rem;
+    border-right: 1px solid #dddddd;
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    border: 3px solid #000000;
+    margin-bottom: 1rem;
+}
+
+.sidebar .time-info {
+    font-size: 1.1rem;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+main {
+    flex: 2;
+    padding: 1rem 2rem;
+}
+
+main h1, main h2 {
+    text-align: left;
+    color: #000000;
+}
+
+main .goals ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+main .goals li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+main .goals li:hover {
+    background-color: #eeeeee;
+}
+
+.links {
+    flex: 1;
+    padding: 1rem;
+    border-left: 1px solid #dddddd;
+    text-align: center;
+}
+
+.links a {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.links a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .links {
+        border: none;
+        text-align: center;
+    }
+
+    .sidebar .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .links a {
+        margin: 0.5rem 0;
+    }
+}
